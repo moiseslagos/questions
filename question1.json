@@ -1,0 +1,23 @@
+[
+    {
+        "question":"¿Pregunta del examen de postulación?",
+        "answers":[
+            {
+                "name":"Respuesta 1",
+                "checked":false
+            },
+            {
+                "name":"Respuesta 2",
+                "checked":false
+            },
+            {
+                "name":"Respuesta 3",
+                "checked":false
+            },
+            {
+                "name":"Respuesta 4",
+                "checked":false
+            }
+        ]
+    }
+]
