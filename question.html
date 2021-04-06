@@ -60,101 +60,105 @@
     </div>
   </div>
 
-  <div class="py-12 bg-white">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
-        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Empezó</h2>
-        <p id="name_examen" class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Examen nivel 1
-        </p>
-        
-
-        <div class="mt-5 lg:px-20">
-          <div class="overflow-hidden border border-gray-200 sm:rounded-lg">
-            <table class="min-w-full divide-y divide-gray-200">
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                  <td class="py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">
-                          Jane Cooper
-                        </div>
-                        <div class="text-sm text-gray-500">
-                          jane.cooper@example.com
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="py-4 whitespace-nowrap">
-                    <div class="flex items-center justify-end ">
-                      <div class="mr-4">
-                        <div id="timer-bg" class="px-2 py-2 text-xs text-center leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                          <span>Restan </span>
-                          <span class="font-black text-xm" id="timer-text" data-timeseconds="3600"></span>
+  <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+    <div class="py-12 bg-white">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Empezó</h2>
+          <p id="name_examen" class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Examen nivel 1
+          </p>
+          
+  
+          <div class="mt-5 lg:px-20">
+            <div class="overflow-hidden border border-gray-200 sm:rounded-lg">
+              <table class="min-w-full divide-y divide-gray-200">
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-gray-900">
+                            Jane Cooper
+                          </div>
+                          <div class="text-sm text-gray-500">
+                            jane.cooper@example.com
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    
-                  </td>
-                </tr>
+                    </td>
+                    <td class="py-4 whitespace-nowrap">
+                      <div class="flex items-center justify-end ">
+                        <div class="mr-4">
+                          <div id="timer-bg" class="px-2 py-2 text-xs text-center leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                            <span>Restan </span>
+                            <span class="font-black text-xm" id="timer-text" data-timeseconds="3600"></span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </td>
+                  </tr>
+      
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          
+        </div>
     
-              </tbody>
-            </table>
+        <div class="mt-10">
+          <form class="mt-8 space-y-6" action="#" method="POST">
+            
+            <dl  class="space-y-10 md:space-y-0 md:gap-x-8 md:gap-y-10">
+              <div class="relative">
+  
+                <dt>
+                  <div id="pagination_all" class="absolute flex items-center justify-center h-8 w-12 rounded-md bg-indigo-500 text-white">1/5</div>
+                  <p id="question_title" class="ml-14 text-lg leading-6 font-medium text-gray-900">¿Pregunta del examen de postulación</p>
+                </dt>
+  
+                <div id="renderOptions">
+  
+                </div>
+  
+                <template id="option">
+                  <dd class="mt-5 ml-14 text-base text-gray-500">
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input id="answer-1" name="question-1" type="radio" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <label for="answer-1" class="ml-2 block text-sm text-gray-900">
+                          Respuesta 1
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                </template>
+                
+                
+              </div>
+      
+            </dl>
+  
+          </form>        
+        </div>
+  
+        <div class="lg:max-w-2xl mx-auto">
+          <div class="mt-10 grid grid-cols-2 gap-x-4 gap-y-5">
+            <button id="btn-previous" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-blue-100 hover:bg-indigo-50">
+              Anterior
+            </a>
+            <button id="btn-next" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+              Siguiente
+            </a>
           </div>
         </div>
-        
-        
-      </div>
   
-      <div class="mt-10">
-        <form class="mt-8 space-y-6" action="#" method="POST">
-          
-          <dl  class="space-y-10 md:space-y-0 md:gap-x-8 md:gap-y-10">
-            <div class="relative">
-
-              <dt>
-                <div id="pagination_all" class="absolute flex items-center justify-center h-8 w-12 rounded-md bg-indigo-500 text-white">1/5</div>
-                <p id="question_title" class="ml-14 text-lg leading-6 font-medium text-gray-900">¿Pregunta del examen de postulación</p>
-              </dt>
-
-              <div id="renderOptions">
-
-              </div>
-
-              <template id="option">
-                <dd class="mt-5 ml-14 text-base text-gray-500">
-                  <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                      <input id="answer-1" name="question-1" type="radio" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
-                      <label for="answer-1" class="ml-2 block text-sm text-gray-900">
-                        Respuesta 1
-                      </label>
-                    </div>
-                  </div>
-                </dd>
-              </template>
-              
-              
-            </div>
-    
-          </dl>
-
-        </form>        
       </div>
-
-
-      <div class="mt-10 grid grid-cols-2 gap-x-4 gap-y-5">
-        <button id="btn-previous" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-blue-100 hover:bg-indigo-50">
-          Anterior
-        </a>
-        <button id="btn-next" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-          Siguiente
-        </a>
-      </div>
-
     </div>
   </div>
+  
 
 
   <!-- This example requires Tailwind CSS v2.0+ -->
