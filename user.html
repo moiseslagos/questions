@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/tailwind.min.css" rel="stylesheet">
+    <style>
+      .form-questions[preload="true"]{
+        text-align: center;
+      }
+      .form-questions[preload="true"]::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 3px solid #eee;
+        border-top: 3px solid #4f46e5;
+        display: inline-block;
+        border-radius: 50%;
+        animation-name: a;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear
+      }
+      @keyframes a { 0% { transform: rotate(0deg) } to { transform: rotate(1turn) } }
+    </style>
+</head>
+<body>
+
+
+  <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+    <div class="py-12 bg-white">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="">
+  
+          <div class="mt-5 lg:px-20">
+
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                <div class="px-4 py-5 sm:px-6">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 whitespace-nowrap">
+                            <div class="flex items-center">
+                                <div class="ml-4">
+                                    <div class="">
+                                        <img class="mx-auto h-20 w-auto" src="./assets/img/logo-arquitectos-del-peru.svg" alt="Workflow">
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                            <td class="py-4 whitespace-nowrap">
+                            <div class="flex items-center justify-end ">
+                                <div class="mr-4 text-center">
+                                    <div class="-space-x-1 overflow-hidden text-center">
+                                        <img class="inline-block h-20 w-20 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                    </div>
+                                    <p class="mt-2 text-1xl leading-8 font-extrabold tracking-tight text-gray-900">CAP: 016205</p>
+                                </div>
+                            </div>
+                            
+                            </td>
+                        </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="border-t border-gray-200">
+                <dl>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            D.N.I.
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            10056205
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Nombres
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            Alicia Josefina
+                        </dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Apellidos
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            Arias Campos
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Email
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            aarias@hotmail.com
+                        </dd>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Colegiatura
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            15-05-2001
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Especialidades
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                        Administración Pública.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                            Construcción.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                            Planificación.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                            Supervisor de obra.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-sm font-medium text-gray-500">
+                            Especialidades
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                        Maestría en arquitectura.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                                    <div class="w-0 flex-1 flex items-center">
+                                        <!-- Heroicon name: solid/paper-clip -->
+                                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <span class="ml-2 flex-1 w-0 truncate">
+                                            Destacada docente en Universidad Cesar Vallejo.pdf
+                                        </span>
+                                    </div>
+                                    <div class="ml-4 flex-shrink-0">
+                                        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                            Download
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </dl>
+                </div>
+            </div>
+
+          </div>
+          
+          
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  
+
+  
+</body>
+</html>
